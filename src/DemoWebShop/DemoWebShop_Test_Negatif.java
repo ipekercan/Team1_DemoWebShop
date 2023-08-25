@@ -11,5 +11,11 @@ public class DemoWebShop_Test_Negatif extends BaseDriver {
 
 
     }
+    @Test
+    public void Test2(){
+
+
+
+    }
 
 }
