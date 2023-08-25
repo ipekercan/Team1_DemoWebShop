@@ -11,7 +11,7 @@ public class Korhan extends BaseDriver {
     public void TestK(){
 
 
-
+    BekleVeKapat();
     }
 
 }
