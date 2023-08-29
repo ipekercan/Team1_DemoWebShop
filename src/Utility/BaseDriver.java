@@ -2,6 +2,7 @@ package Utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.logging.Level;
@@ -11,6 +12,7 @@ public class BaseDriver {
 
 
     public static WebDriver driver;
+    public static WebDriverWait wait;
 
     //SingletonDriver method deniyor buna
 
@@ -24,6 +26,7 @@ public class BaseDriver {
         driver.manage().window().maximize();//Ekranı maximize yapıyor
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));//20 sn mühlet sayfayı yüklemek için
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));//20 sn mühlet elemanı bulmak içinı bulmak için
+        wait=new WebDriverWait(driver,Duration.ofSeconds(20));
     }
 
     public static void BekleVeKapat()
