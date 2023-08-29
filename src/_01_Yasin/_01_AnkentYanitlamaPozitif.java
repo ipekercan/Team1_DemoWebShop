@@ -55,11 +55,6 @@ public class _01_AnkentYanitlamaPozitif extends BaseDriver {
         Assert.assertTrue(text2.getText().contains("Excellent"));
 
 
-
-
-
-
-
         BekleVeKapat();
     }
 }
