@@ -1,6 +1,8 @@
 package Utility;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -34,6 +36,7 @@ public class BaseDriver {
         MyFunc.Bekle(5);
         driver.quit();
     }
+
 }
 
 //  Java hızlı - Web sitesi yavaş
