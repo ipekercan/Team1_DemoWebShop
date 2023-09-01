@@ -49,6 +49,7 @@ public class TC_0602 extends BaseDriver {
         MyFunc.Bekle(1);
 
         WebElement shoppingCart = driver.findElement(By.xpath("//span[@class='cart-label' and text()='Shopping cart']"));
+        MyFunc.Bekle(2);
         shoppingCart.click();
         MyFunc.Bekle(1);
 
